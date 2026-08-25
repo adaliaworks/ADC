@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Now in our second decade, somehow — A Decent Conversation</title>
+<meta name="description" content="How a few people at a table in 2015 became a decade of Wednesday mornings in Greensboro — an undercover priest, an amateur rabbi, and an island of misfit toys.">
+
+<meta property="og:title" content="Now in our second decade, somehow — A Decent Conversation">
+<meta property="og:description" content="The history of A Decent Conversation: 2015 to now, told the way it happened.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adecentconversation.com/history">
+<meta property="og:image" content="/img/social-preview.png">
+
+<!--
+  A DECENT CONVERSATION — /history
+  Copy locked with Trey, August 2026.
+  Lives at /history/index.html so the URL renders clean.
+
+  CONSENT STATUS (page must not publish until all cleared)
+  [x] Andy — survey quote approved. STILL NEEDS 3-item check:
+      "so, is this us?", the Jewish reference, "amateur rabbi"
+  [x] Elijah — approved in principle. Send him sections 1-3 verbatim
+      before launch, per Trey's promise in the consent note.
+  [ ] Bob W. — Voices quote, first name (note sent, awaiting yes)
+  [ ] Jagmeet — Voices quote, first name (note sent, awaiting yes)
+  [ ] Bob Strack — spinning-rock quote attributed "(another) Bob";
+      Trey showing him directly. If no: swap for a different
+      unattributed line or Andy's "come and sit in on a great
+      adventure."
+
+  FLAG: Section 4's heading and first sentence both say "decade did
+  what decades do." Trey has seen the doubling flagged; if he cuts
+  the sentence, delete the first sentence of the section-4 paragraph
+  and start at "The building changed names twice".
+
+  NOTE: "multiply" in the final section is the only public breath of
+  the multiplication plan — phrased as an open question on purpose.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:      #15181C;
+    --ground:   #DDE3E6;
+    --paper:    #F1F4F4;
+    --graphite: #5A6367;
+    --brass:    #8F6A15;
+    --rule:     rgba(21, 24, 28, 0.22);
+
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --body:    "Literata", Georgia, serif;
+    --util:    "DM Mono", ui-monospace, monospace;
+
+    --measure: 34rem;
+    --gutter:  clamp(1.25rem, 5vw, 3rem);
+    --step:    clamp(2.75rem, 7vw, 4.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:      #E7EBEC;
+      --ground:   #14181B;
+      --paper:    #1C2125;
+      --graphite: #9AA3A8;
+      --brass:    #D0A344;
+      --rule:     rgba(231, 235, 236, 0.24);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+    line-height: 1.62;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  p { margin: 0 0 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+  a:hover { text-decoration-color: var(--brass); }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 1.5rem;
+  }
+
+  .table-rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: var(--step) 0;
+    transform-origin: left center;
+  }
+
+  .masthead {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .wordmark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .wordmark a { text-decoration: none; }
+  .wordmark a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
+
+  .masthead .since {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+  }
+
+  .pagehead { padding-top: clamp(2.5rem, 7vw, 4rem); }
+
+  .pagehead h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.1rem, 5.6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .chapter h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0 0 1.1rem;
+    text-wrap: balance;
+  }
+
+  /* Illustration plates */
+  figure.plate { margin: 2rem 0 0; }
+  figure.plate img { display: block; width: 100%; height: auto; }
+
+  .ph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px dashed var(--rule);
+    color: var(--graphite);
+    font-family: var(--util);
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .ph b {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+
+  .ph span { max-width: 34ch; }
+
+  .ph-h1 { aspect-ratio: 3 / 2; }
+  .ph-h2 { aspect-ratio: 3 / 2; }
+  .ph-h3 { aspect-ratio: 16 / 7; }
+
+  /* Voices */
+  .voices { background: var(--paper); padding: clamp(1.5rem, 4vw, 2.5rem); }
+
+  .voices h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    letter-spacing: -0.015em;
+    margin: 0 0 1.1rem;
+  }
+
+  .voices .setup { color: var(--graphite); margin-bottom: 1.75rem; }
+
+  .voices blockquote {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+  }
+
+  .voices blockquote:last-child { margin-bottom: 0; }
+
+  .voices cite {
+    display: block;
+    font-style: normal;
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+    margin-top: 0.4rem;
+  }
+
+  footer {
+    padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+
+  footer a { color: var(--ink); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pagehead h1 {
+      animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    .table-rule {
+      animation: draw 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(0.9rem); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes draw {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
+    <p class="since">Greensboro, North Carolina — since 2015</p>
+  </header>
+
+  <section class="pagehead">
+    <p class="eyebrow">Our history</p>
+    <h1>Now in our second decade, somehow.</h1>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="chapter">
+    <h2>How it started</h2>
+    <p>
+      The founding idea went something like this: the last thing Greensboro
+      needs is another Bible study. So what if we just had a conversation —
+      people from a bunch of different backgrounds, comparing notes on how
+      we've each tried to figure out who we are, why we're here, and what
+      difference we hope to make in the world? That was the whole plan. In
+      September 2015, Trey and Elijah invited a few people to a table at
+      what was then HQ Greensboro, and A Decent Conversation met for the
+      first time.
+    </p>
+
+    <figure class="plate">
+      <!-- H1 — replace with: <img src="/img/H1.svg" alt="Two people at a small table with plenty of empty space around them."> -->
+      <div class="ph ph-h1" role="img" aria-label="Illustration: two people at a small table with plenty of empty space around them.">
+        <b>H1 — TWO AT A TABLE, 2015</b>
+        <span>Two figures at a small table, sparse, a little tentative. 3:2</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="chapter">
+    <h2>Finding our form</h2>
+    <p>
+      Trey brought starter questions to the first few meetings but
+      abandoned them within a month; what emerged from the particular
+      people at the table was better every week. And it was six weeks
+      before anyone mentioned what they did for a living. That wasn't a
+      rule — the group didn't have rules. The reveal, when it came, was
+      worth the wait: Elijah, it turned out, is a priest. An excellent
+      preacher, by all accounts — who in six weeks had never once gone
+      into Preacher Mode at the table. The conversation that followed,
+      about what changes in us when a perceived authority figure is in the
+      room ("How many f-bombs have I dropped in front of the pastor?"),
+      was one of the best the early group had.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="chapter">
+    <h2>An undercover priest and an amateur rabbi walk into a coworking space&hellip;</h2>
+    <p>
+      The next chapter arrived on its own two feet. In Andy's words: "I
+      came into work and four people were sitting at a table, and I asked
+      what they were doing. Trey said, 'We're having a decent
+      conversation.' Eleven years later, here we are." He joined on the
+      spot, saying as he took his seat, "so, is this us?" And then he did
+      what Andy does — he started inviting people. Most of the folks
+      around the table today can trace their seat back to Andy or to
+      someone Andy brought.
+    </p>
+
+    <figure class="plate">
+      <!-- H2 — replace with: <img src="/img/H2.svg" alt="A person standing at the edge of a table, leaning in to ask the seated group a question."> -->
+      <div class="ph ph-h2" role="img" aria-label="Illustration: a person standing at the edge of a table, leaning in to ask the seated group a question.">
+        <b>H2 — THE INTERRUPTION</b>
+        <span>A standing figure leaning in, asking; the seated group turned up toward them. Generic figure, no likeness. 3:2</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="chapter">
+    <h2>The first decade did what decades do</h2>
+    <p>
+      The building changed names twice — HQ
+      became transformGSO became Thrive — the group moved once, and a
+      pandemic pushed the conversation onto Zoom (no good), then downtown
+      on foot, and finally to the outdoor seating behind South End Brewery
+      for a season. Four or five people became a full table, representing
+      different ages, career paths and stages, histories and backgrounds,
+      politics, faiths. The result is something like an island of misfit
+      toys — people who wouldn't likely end up together, but somehow we
+      did.
+    </p>
+
+    <figure class="plate">
+      <!-- H3 — replace with: <img src="/img/H3.svg" alt="A crowded table of many people, figures overlapping, mid-conversation."> -->
+      <div class="ph ph-h3" role="img" aria-label="Illustration: a crowded table of many people, figures overlapping, mid-conversation.">
+        <b>H3 — THE FULL TABLE NOW</b>
+        <span>A dozen-plus figures, table line running full width, abundant and slightly noisy. 16:7</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="voices">
+    <h2>In their words</h2>
+    <p class="setup">
+      We asked the people who've been part of this what they'd say to
+      someone thinking about coming for the first time.
+    </p>
+
+    <blockquote>
+      "Trust me, knowing someone first is not at all necessary with this
+      group. Just come and be yourself, be open."
+      <cite>— Bob</cite>
+    </blockquote>
+
+    <blockquote>
+      "Come and listen. See what you learn."
+      <cite>— Jeri</cite>
+    </blockquote>
+
+    <blockquote>
+      "A gathering of curious humans who seek to understand, share and
+      connect on what divides and brings us together on this spinning rock
+      of chaos."
+      <cite>— (another) Bob</cite>
+    </blockquote>
+
+    <blockquote>
+      "You will be warmly welcomed here."
+      <cite>— Jagmeet</cite>
+    </blockquote>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="chapter">
+    <h2>What's next question mark</h2>
+    <p>
+      From the beginning, the working rule was to never let this turn into
+      a "thing" — no organization, no officers, no budget, no brand. Just
+      a conversation worth showing up for. A website, we admit, flirts
+      with thing-ness. But lately we've been wondering what it would mean
+      for this to outlast any one of us. The hope is simple enough. Ten
+      years from now, one of us is on a work trip in a city where we don't
+      know a soul — and it turns out there's A Decent Conversation meeting
+      a few blocks from the hotel. We drop in. We don't recognize the
+      people, and the conversation's about something we never saw coming.
+      But we know exactly where we are inside of five minutes. That's the
+      question now: can the conversation multiply and spread without
+      turning into a thing?
+    </p>
+  </section>
+
+  <footer>
+    <a href="/">&larr; Back to the invitation</a>
+    <a href="/principles">Our principles &rarr;</a>
+  </footer>
+
+</div>
+
+</body>
+</html>

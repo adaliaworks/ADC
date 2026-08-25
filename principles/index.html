@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our principles — A Decent Conversation</title>
+<meta name="description" content="Five things a decade of Wednesday mornings taught us about what makes a conversation worth waking up early for.">
+
+<meta property="og:title" content="Our principles — A Decent Conversation">
+<meta property="og:description" content="Not rules — a description of the good mornings. Five principles from over a decade of Wednesdays in Greensboro.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adecentconversation.com/principles">
+<meta property="og:image" content="/img/social-preview.png">
+
+<!--
+  A DECENT CONVERSATION — /principles
+  Copy locked with Trey, August 2026.
+  Lives at /principles/index.html so the URL renders clean.
+
+  NOTE: a closing "come as you are and be transformed" line was
+  considered and dropped for register (church echo). The page now ends
+  on "a little more known, a little more interested, a little more
+  alive."
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:      #15181C;
+    --ground:   #DDE3E6;
+    --paper:    #F1F4F4;
+    --graphite: #5A6367;
+    --brass:    #8F6A15;
+    --rule:     rgba(21, 24, 28, 0.22);
+
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --body:    "Literata", Georgia, serif;
+    --util:    "DM Mono", ui-monospace, monospace;
+
+    --measure: 34rem;
+    --gutter:  clamp(1.25rem, 5vw, 3rem);
+    --step:    clamp(2.75rem, 7vw, 4.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:      #E7EBEC;
+      --ground:   #14181B;
+      --paper:    #1C2125;
+      --graphite: #9AA3A8;
+      --brass:    #D0A344;
+      --rule:     rgba(231, 235, 236, 0.24);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+    line-height: 1.62;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  p { margin: 0 0 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+  a:hover { text-decoration-color: var(--brass); }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 1.5rem;
+  }
+
+  .table-rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: var(--step) 0;
+    transform-origin: left center;
+  }
+
+  .masthead {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .wordmark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .wordmark a { text-decoration: none; }
+  .wordmark a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
+
+  .masthead .since {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+  }
+
+  .pagehead { padding-top: clamp(2.5rem, 7vw, 4rem); }
+
+  .pagehead h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.1rem, 5.6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+  }
+
+  .intro { font-size: 1.12em; }
+
+  .principle h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0 0 0.35rem;
+  }
+
+  .principle .gloss {
+    font-style: italic;
+    color: var(--graphite);
+    margin-bottom: 1.1rem;
+  }
+
+  .close { background: var(--paper); padding: clamp(1.5rem, 4vw, 2.5rem); }
+
+  .close h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.75rem;
+  }
+
+  footer {
+    padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+
+  footer a { color: var(--ink); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pagehead h1, .pagehead .intro {
+      animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    .pagehead .intro { animation-delay: 0.12s; }
+
+    .table-rule {
+      animation: draw 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(0.9rem); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes draw {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
+    <p class="since">Greensboro, North Carolina — since 2015</p>
+  </header>
+
+  <section class="pagehead">
+    <p class="eyebrow">Our principles</p>
+    <h1>How we keep it decent</h1>
+    <p class="intro">
+      We didn't start with principles. We started with a conversation, and
+      over a decade of Wednesdays taught us which mornings worked and which
+      ones went flat. The five things below aren't rules we wrote down at
+      the beginning — they're what was left after years of figuring out
+      what actually makes a conversation worth waking up early for.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="principle">
+    <h2>1. Keep it close to the heart.</h2>
+    <p class="gloss">We talk about our own lives, not the news.</p>
+    <p>
+      We're not a debate club or a group therapy session. Not that there's
+      anything wrong with those! But because you can get them anywhere, and
+      because a conversation about opinions and positions never seems to go
+      anywhere. A conversation about life keeps going. When the world shows
+      up at the table (and it often does), the question isn't who's right
+      about it. It's how each of us is living in it.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="principle">
+    <h2>2. Stories before opinions.</h2>
+    <p class="gloss">How you got here beats what you think out there.</p>
+    <p>
+      Everyone at the table already has opinions — nobody needs to drive
+      across town at 7 a.m. to collect more of them. So we look for the
+      story instead. Ask someone's opinion and you get their conclusion;
+      ask how they came by it and you get their life. That second
+      conversation is better every time: harder to argue with, more
+      interesting to participate in, and usually a better justification of
+      the opinion than the opinion itself.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="principle">
+    <h2>3. Low ego, guard down.</h2>
+    <p class="gloss">You probably won't spot the smartest person in the room.</p>
+    <p>
+      Every group has a pecking order, whether anyone names it or not.
+      Most sort people up and down; this one only asks whether you're in
+      or out, and you answered that by showing up! Résumés, titles, and
+      credentials matter, but in this room they're beside the point.
+      Nobody's keeping score or pitching; when nobody's performing, people
+      tend to open up. One person lowering their guard gives everyone else
+      permission to do the same — and the people who get the most out of
+      ADC are usually the ones willing to say "I don't know" or "I got
+      that one wrong." Which, it turns out, is contagious.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="principle">
+    <h2>4. What's learned here leaves here; what's said here stays here.</h2>
+    <p class="gloss">The lessons travel. The details don't.</p>
+    <p>
+      Both halves of this principle matter. What someone shares at the
+      table — the names, the details, the specifics of their actual life —
+      stays at the table. But what you learn from it goes with you: into
+      your family, your work, your friendships, the way you treat the next
+      stranger. We'd be lousy company if our time together didn't change
+      anything. So the lessons travel. The details don't.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="principle">
+    <h2>5. One conversation, fully present.</h2>
+    <p class="gloss">Phones away. One voice at a time.</p>
+    <p>
+      One conversation means exactly that — no side exchanges, no table
+      splitting in two, no checking a phone under the table. A dozen or so
+      people genuinely tracking one thread is rare enough that most of us
+      can't name another place it happens. It's also the only way the
+      soft-spoken observation from the far end of the table registers with
+      everyone — and that's the comment that changes the morning more
+      often than not. Being present is mostly about listening with
+      curiosity, not just reloading while somebody else talks. Our
+      most-decent conversations happen when someone asks a question about
+      what was just said instead of steering back to what they wanted to
+      talk about.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="close">
+    <h2>What these aren't</h2>
+    <p>
+      We don't recite these principles on Wednesday mornings before we
+      begin, and nobody's ever been scolded for breaking one. They're not
+      prescriptive rules — they simply describe the good mornings. The aim
+      is simpler than the five principles makes it sound: everyone leaves a
+      little more known, a little more interested, and a little more alive.
+    </p>
+  </section>
+
+  <footer>
+    <a href="/">&larr; Back to the invitation</a>
+    <a href="/history">Now in our second decade, somehow &rarr;</a>
+  </footer>
+
+</div>
+
+</body>
+</html>

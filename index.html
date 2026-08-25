@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Decent Conversation — Wednesday mornings in Greensboro</title>
+<meta name="description" content="Wednesdays, 7:15 a.m. Greensboro. Since 2015. No agenda, no one running it, no idea what we'll talk about until we're sitting down.">
+
+<meta property="og:title" content="A Decent Conversation">
+<meta property="og:description" content="Pull up a seat for the most decent conversation you'll have all week. Wednesdays, 7:15 a.m., Greensboro. Since 2015.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adecentconversation.com/">
+<!-- F2 from the shot list: L1 cropped to 1200x630, exported as PNG -->
+<meta property="og:image" content="/img/social-preview.png">
+
+<!--
+  ============================================================
+  A DECENT CONVERSATION — landing page
+  Copy locked with Trey, August 2026. Section-by-section rework.
+  ============================================================
+
+  BEFORE PUBLISHING
+  [ ] Web3Forms access key — replace YOUR_WEB3FORMS_ACCESS_KEY below
+  [ ] /principles page exists (linked from principles section + footer)
+  [ ] /history page exists (linked from footer)
+  [ ] Illustrations dropped in: L1, L2, L3, L5 (see shot list)
+  [ ] F1 favicon + F2 social preview generated
+  [ ] Domain registration access shared with Ryan
+
+  CONSENT (all now relevant to /history, not this page)
+  [ ] Robert Winslow — quote, named (survey: yes-with-name; confirm in writing)
+  [ ] Andy Zimmerman — origin quote, named (survey: yes-with-name; confirm)
+  [ ] Jagmeet Singh — asked to review anything of his before publication
+  [ ] Elijah Lovejoy — named in founding story; confirm
+
+  THE RULE THAT GOVERNS THIS SITE
+  The software serves the meeting; it never becomes a place people gather.
+  This site describes the container, never its contents. No comment
+  threads, no member directory, no photos of the room. If a feature would
+  let someone participate without being in the chair, it doesn't belong.
+  Embodied presence is the point.
+
+  HOUSE STYLE (locked during the rework)
+  - Full sentences; no breezy fragments
+  - "Diverse" and "mixed" do not appear; concrete specifics instead
+  - "Over a decade" / "second decade" instead of counting years
+    (exception: "Since 2015" — a date, not a count)
+  - Plain and dry beats earnest; the page never explains its own
+    significance
+
+  BANKED
+  - "Island of misfit toys" — /history candidate
+  - The Bible-study founding line — /history
+  - Member voices (Robert W., Andy's origin story, others) — /history
+
+  DEFERRED
+  - Weekly reminder email signup — v1.2 (manual through fall 2026)
+  - /start (start a group of your own) — v1.2
+  - /g/1 group page with wayfinding — v1.2
+  - /p person pages — opt-in, authenticated, notifications only
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------------------------------------------------------
+     Tokens. Palette is 7:15 a.m. light — cool, pale, before
+     the sun is properly up. Brass is the low sun, used
+     sparingly. Drawings inherit currentColor.
+     --------------------------------------------------------- */
+  :root {
+    --ink:      #15181C;
+    --ground:   #DDE3E6;
+    --paper:    #F1F4F4;
+    --graphite: #5A6367;
+    --brass:    #8F6A15;
+    --rule:     rgba(21, 24, 28, 0.22);
+
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --body:    "Literata", Georgia, serif;
+    --util:    "DM Mono", ui-monospace, monospace;
+
+    --measure: 34rem;
+    --gutter:  clamp(1.25rem, 5vw, 3rem);
+    --step:    clamp(3rem, 8vw, 5.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:      #E7EBEC;
+      --ground:   #14181B;
+      --paper:    #1C2125;
+      --graphite: #9AA3A8;
+      --brass:    #D0A344;
+      --rule:     rgba(231, 235, 236, 0.24);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+    line-height: 1.62;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .col { max-width: var(--measure); }
+
+  p { margin: 0 0 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+  a:hover { text-decoration-color: var(--brass); }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 1.5rem;
+  }
+
+  /* The table line. Every section break is a table, not a divider. */
+  .table-rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: var(--step) 0;
+    transform-origin: left center;
+  }
+
+  /* ---- Masthead ---- */
+  .masthead {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .wordmark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .masthead .since {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+  }
+
+  /* ---- Hero ---- */
+  .hero { padding-top: clamp(2.5rem, 7vw, 4.5rem); }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.15rem, 6.4vw, 4.1rem);
+    line-height: 1.04;
+    letter-spacing: -0.028em;
+    margin: 0 0 1.4rem;
+    max-width: 24ch;
+    text-wrap: balance;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .hero .standfirst {
+    font-size: 1.15em;
+    max-width: 40rem;
+  }
+
+  /* ---- Illustration plates ---- */
+  figure.plate { margin: var(--step) 0 0; }
+
+  figure.plate img { display: block; width: 100%; height: auto; }
+
+  /* Placeholder box — delete each as the real SVG lands */
+  .ph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px dashed var(--rule);
+    color: var(--graphite);
+    font-family: var(--util);
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .ph b {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+
+  .ph span { max-width: 34ch; }
+
+  .ph-l1 { aspect-ratio: 16 / 7; }
+  .ph-l2 { aspect-ratio: 1 / 1; }
+  .ph-l3 { aspect-ratio: 5 / 1; }
+  .ph-l5 { aspect-ratio: 2 / 3; }
+
+  /* ---- Two-up: copy beside a small plate ---- */
+  .duo {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  @media (min-width: 46rem) {
+    .duo { grid-template-columns: 1fr 13rem; gap: clamp(2rem, 5vw, 4rem); }
+    .duo figure.plate { margin-top: 0.4rem; }
+  }
+
+  /* ---- Principles ---- */
+  .principles {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: grid;
+    gap: 1.15rem;
+    max-width: 38rem;
+  }
+
+  .principles b {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 0.98em;
+    letter-spacing: -0.005em;
+  }
+
+  .principles-more {
+    font-family: var(--util);
+    font-size: 0.85rem;
+  }
+
+  /* ---- Where and when ---- */
+  .lead-line {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 1.75rem;
+  }
+
+  .next {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.35rem, 3.4vw, 1.9rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 2rem;
+  }
+
+  .next .brass { color: var(--brass); }
+
+  .facts {
+    font-family: var(--util);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .facts div { display: grid; gap: 0.15rem; }
+
+  .facts dt {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
+
+  .facts dd { margin: 0; }
+
+  /* ---- Form ---- */
+  .ask {
+    background: var(--paper);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    max-width: 32rem;
+  }
+
+  .ask h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.5rem;
+  }
+
+  .ask .lede {
+    font-size: 0.95em;
+    color: var(--graphite);
+    margin-bottom: 1.5rem;
+  }
+
+  .field { display: grid; gap: 0.4rem; margin-bottom: 1.1rem; }
+
+  .field label {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
+
+  .field input,
+  .field textarea {
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+    padding: 0.5rem 0;
+    border-radius: 0;
+  }
+
+  .field textarea { resize: vertical; min-height: 5.5rem; }
+
+  .field input:focus,
+  .field textarea:focus {
+    outline: 0;
+    border-bottom-color: var(--brass);
+    border-bottom-width: 2px;
+    padding-bottom: calc(0.5rem - 1px);
+  }
+
+  button {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: var(--ground);
+    background: var(--ink);
+    border: 0;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  button:hover { background: var(--brass); }
+
+  .form-note {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    color: var(--graphite);
+    margin: 1rem 0 0;
+  }
+
+  [aria-live] { font-size: 0.95em; }
+
+  /* ---- Footer ---- */
+  footer {
+    padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .signoff {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+
+  .footer-links {
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+
+  .footer-links a { color: var(--ink); }
+
+  /* ---- Motion: one orchestrated arrival, then nothing ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1, .hero .standfirst, .hero .plate {
+      animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    .hero h1 { animation-delay: 0.05s; }
+    .hero .standfirst { animation-delay: 0.16s; }
+    .hero .plate { animation-delay: 0.26s; }
+
+    .table-rule {
+      animation: draw 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(0.9rem); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes draw {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="wordmark">A Decent Conversation</p>
+    <p class="since">Greensboro, North Carolina — since 2015</p>
+  </header>
+
+  <section class="hero">
+    <h1>Pull up a seat for the most <em>decent</em> conversation you'll have all week.</h1>
+    <p class="standfirst col">
+      Wednesdays, 7:15 a.m. Greensboro. Since 2015. No agenda, no one
+      running it, no idea what we'll talk about until we're sitting down.
+    </p>
+
+    <figure class="plate">
+      <!-- L1 — replace with: <img src="/img/L1.svg" alt="Four people talking around a table, with one chair pulled out and empty."> -->
+      <div class="ph ph-l1" role="img" aria-label="Illustration: four people talking around a table with one chair pulled out and empty.">
+        <b>L1 — THE EMPTY CHAIR</b>
+        <span>Three or four figures mid-conversation, seen from behind. One seat pulled slightly out and unfilled, nearest the viewer. 16:7</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="duo">
+    <div class="col">
+      <p class="eyebrow">What it is</p>
+      <p>
+        We started in 2015, with a few people who wanted to explore
+        Identity, Purpose, and Meaning — three things that don't come up
+        much at work, and almost never with someone who sees the world
+        differently than you. We still don't have a curriculum, a teacher,
+        or an agenda. Whoever's at the table on a given Wednesday decides
+        where the conversation goes, which means no two mornings look
+        alike.
+      </p>
+      <p>
+        The people who show up don't have much in common on paper —
+        different ages, different career paths and stages, different
+        histories and backgrounds, different politics, different faiths.
+        That's exactly what makes the conversation worth having. Nobody's
+        there to agree with everyone else at the table.
+      </p>
+    </div>
+
+    <figure class="plate">
+      <!-- L2 — replace with: <img src="/img/L2.svg" alt="A person seen from behind, forearms on a table, leaning in to listen."> -->
+      <div class="ph ph-l2" role="img" aria-label="Illustration: a person seen from behind, forearms on a table, leaning in to listen.">
+        <b>L2 — THE LISTENER</b>
+        <span>Single figure from behind, leaning slightly in. 1:1</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section>
+    <p class="eyebrow">How we keep it decent</p>
+    <ul class="principles">
+      <li><b>Keep it close to the heart.</b> We talk about our own lives, not the news.</li>
+      <li><b>Stories before opinions.</b> How you got here beats what you think out there.</li>
+      <li><b>Low ego, guard down.</b> You probably won't spot the smartest person in the room.</li>
+      <li><b>What's learned here leaves here; what's said here stays here.</b> The lessons travel. The details don't.</li>
+      <li><b>One conversation, fully present.</b> Phones away. One voice at a time.</li>
+    </ul>
+    <p class="principles-more"><a href="/principles">More on why these five &rarr;</a></p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section>
+    <p class="eyebrow">Where and when</p>
+    <p class="lead-line col">Early enough that the day hasn't gotten to anyone yet.</p>
+
+    <p class="next" id="next-meeting">
+      Wednesdays, <span class="brass">7:15&ndash;8:30 in the morning</span>.
+    </p>
+
+    <dl class="facts col">
+      <div>
+        <dt>When</dt>
+        <dd>Wednesdays, 7:15&ndash;8:30 a.m.</dd>
+      </div>
+      <div>
+        <dt>The season</dt>
+        <dd>Every Wednesday, Labor Day to Memorial Day</dd>
+      </div>
+      <div>
+        <dt>Where</dt>
+        <dd>Thrive — 111 Bain Street, Greensboro</dd>
+      </div>
+      <div>
+        <dt>Cost</dt>
+        <dd>Nothing. Nothing to sign, nothing to bring.</dd>
+      </div>
+    </dl>
+
+    <figure class="plate">
+      <!-- L3 — replace with: <img src="/img/L3.svg" alt="Forearms and hands resting on a table, one mid-gesture."> -->
+      <div class="ph ph-l3" role="img" aria-label="Illustration: forearms and hands resting on a table, one mid-gesture.">
+        <b>L3 — HANDS</b>
+        <span>Forearms on the table line, no heads. 5:1</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="duo">
+    <div class="col">
+      <p class="eyebrow">How you join</p>
+      <p>
+        You come once as a Visitor. If you come back, you're a Member.
+        That's the entire system — no application, no dues, nobody
+        deciding whether you're in. We've run this way for over a decade
+        and nobody's found a reason to complicate it.
+      </p>
+    </div>
+
+    <figure class="plate">
+      <!-- L5 — replace with: <img src="/img/L5.svg" alt="A person standing at the edge of the frame, coat still on, about to sit down at an occupied table."> -->
+      <div class="ph ph-l5" role="img" aria-label="Illustration: a person standing at the edge of the frame, coat still on, about to sit down at an occupied table.">
+        <b>L5 — ARRIVING</b>
+        <span>Figure from behind, standing, coat on, table beyond. 2:3</span>
+      </div>
+    </figure>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="ask">
+    <h2>Questions before you come?</h2>
+    <p class="lede">
+      Walking into a room of strangers at 7:15 in the morning is a strange
+      thing to do. If you'd rather ask something first — anything — this
+      goes straight to Trey. Or skip it and just come. Both work.
+    </p>
+
+    <form id="ask-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="Question from adecentconversation.com">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="message">What would you like to know?</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+      <p class="form-note">You'll hear back within a day or two.</p>
+      <p class="form-note" id="form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <hr class="table-rule">
+
+  <footer>
+    <p class="signoff">It's just a conversation. We checked.</p>
+    <div class="footer-links">
+      <a href="/principles">Our principles &rarr;</a>
+      <a href="/history">Now in our second decade, somehow &rarr;</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+/* -----------------------------------------------------------
+   The next Wednesday. ADC runs September through May, so the
+   page knows whether it's in season or on summer break.
+   Fails quiet: if anything throws, the static line stands.
+   ----------------------------------------------------------- */
+(function () {
+  var el = document.getElementById('next-meeting');
+  if (!el) return;
+
+  try {
+    var MEETING_HOUR = 7, MEETING_MIN = 15, OVER_HOUR = 8, OVER_MIN = 30;
+
+    function nthWeekdayOfMonth(year, month, weekday, n) {
+      var d = new Date(year, month, 1);
+      var shift = (weekday - d.getDay() + 7) % 7;
+      d.setDate(1 + shift + (n - 1) * 7);
+      return d;
+    }
+
+    function lastWeekdayOfMonth(year, month, weekday) {
+      var d = new Date(year, month + 1, 0);
+      d.setDate(d.getDate() - ((d.getDay() - weekday + 7) % 7));
+      return d;
+    }
+
+    // First meeting: the Wednesday after Labor Day (first Monday of Sept).
+    function seasonOpen(year) {
+      var labor = nthWeekdayOfMonth(year, 8, 1, 1);
+      var d = new Date(labor);
+      d.setDate(d.getDate() + 2);
+      d.setHours(MEETING_HOUR, MEETING_MIN, 0, 0);
+      return d;
+    }
+
+    // Last meeting: the Wednesday before Memorial Day (last Monday of May).
+    function seasonClose(year) {
+      var memorial = lastWeekdayOfMonth(year, 4, 1);
+      var d = new Date(memorial);
+      d.setDate(d.getDate() - 5);
+      d.setHours(OVER_HOUR, OVER_MIN, 0, 0);
+      return d;
+    }
+
+    var now = new Date();
+
+    var candidate = new Date(now);
+    candidate.setHours(MEETING_HOUR, MEETING_MIN, 0, 0);
+    var over = new Date(now);
+    over.setHours(OVER_HOUR, OVER_MIN, 0, 0);
+    var daysAhead = (3 - candidate.getDay() + 7) % 7;
+    if (daysAhead === 0 && now > over) daysAhead = 7;
+    candidate.setDate(candidate.getDate() + daysAhead);
+
+    var y = candidate.getFullYear();
+    var open = seasonOpen(y);
+    var close = seasonClose(y);
+    var onBreak = candidate > close && candidate < open;
+    var meeting = onBreak ? open : candidate;
+
+    var fmt = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long', month: 'long', day: 'numeric'
+    });
+    var when = fmt.format(meeting);
+
+    var lead = onBreak
+      ? 'We\'re back'
+      : (daysAhead === 0 ? 'This morning —' : 'Next up —');
+
+    el.innerHTML = lead + ' <span class="brass">' + when +
+      '</span>, 7:15 in the morning.';
+
+    if (onBreak) {
+      el.insertAdjacentHTML('afterend',
+        '<p class="form-note" style="margin:-1.25rem 0 2rem">' +
+        'The group breaks for the summer and picks back up in September.</p>');
+    }
+  } catch (e) { /* static line stands */ }
+})();
+
+/* Form submit — stay on the page rather than bouncing to Web3Forms. */
+(function () {
+  var form = document.getElementById('ask-form');
+  var status = document.getElementById('form-status');
+  if (!form || !status) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var button = form.querySelector('button');
+    button.disabled = true;
+    status.textContent = 'Sending…';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.success) {
+          form.innerHTML =
+            '<p>Thanks — that\'s with Trey. You\'ll hear back within a day ' +
+            'or two. And you\'re welcome Wednesday either way.</p>';
+        } else {
+          throw new Error('rejected');
+        }
+      })
+      .catch(function () {
+        button.disabled = false;
+        status.textContent =
+          'That didn\'t send. Try again, or just come Wednesday at 7:15.';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
