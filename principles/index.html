@@ -134,6 +134,65 @@
     color: var(--graphite);
   }
 
+  /* ---- Nav ---- */
+  .masthead-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .nav { position: relative; }
+
+  .nav summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0;
+  }
+
+  .nav summary::-webkit-details-marker { display: none; }
+  .nav summary::marker { content: ""; }
+
+  .nav .bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--ink);
+    transition: background 0.15s ease;
+  }
+
+  .nav:hover .bar,
+  .nav[open] summary .bar { background: var(--brass); }
+
+  .nav-panel {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    display: grid;
+    min-width: 12rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 0.4rem;
+    z-index: 20;
+  }
+
+  .nav-panel a {
+    font-family: var(--util);
+    font-size: 0.85rem;
+    padding: 0.6rem 0.75rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .nav-panel a:hover { background: var(--ground); color: var(--brass); }
+  .nav-panel a[aria-current="page"] { color: var(--brass); }
+
   .pagehead { padding-top: clamp(2.5rem, 7vw, 4rem); }
 
   .pagehead h1 {
@@ -212,7 +271,22 @@
 
   <header class="masthead">
     <p class="wordmark"><a href="/">A Decent Conversation</a></p>
-    <p class="since">Greensboro, North Carolina — since 2015</p>
+    <div class="masthead-right">
+      <p class="since">Greensboro, North Carolina — since 2015</p>
+      <details class="nav">
+        <summary aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </summary>
+        <nav class="nav-panel">
+          <a href="/">Home</a>
+          <a href="/principles" aria-current="page">Principles</a>
+          <a href="/history">History</a>
+          <a href="/contact">Ask Trey Anything</a>
+        </nav>
+      </details>
+    </div>
   </header>
 
   <section class="pagehead">
@@ -330,6 +404,20 @@
   </footer>
 
 </div>
+
+<script>
+/* Nav — close on outside click or Escape. */
+(function () {
+  var nav = document.querySelector('details.nav');
+  if (!nav) return;
+  document.addEventListener('click', function (e) {
+    if (nav.open && !nav.contains(e.target)) nav.removeAttribute('open');
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.open) nav.removeAttribute('open');
+  });
+})();
+</script>
 
 </body>
 </html>
