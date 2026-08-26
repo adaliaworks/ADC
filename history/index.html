@@ -125,11 +125,14 @@
 
   .masthead {
     padding-top: clamp(2rem, 6vw, 4rem);
+  }
+
+  .masthead-top {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
+    gap: 1.25rem;
   }
 
   .wordmark {
@@ -147,17 +150,10 @@
     font-family: var(--util);
     font-size: clamp(1.01rem, 2.5vw, 1.33rem);
     color: var(--graphite);
-    margin: 0;
+    margin: 0.6rem 0 0;
   }
 
   /* ---- Nav ---- */
-  .masthead-right {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    margin-left: auto;
-  }
-
   .nav { position: relative; }
 
   .nav summary {
@@ -332,9 +328,8 @@
 <div class="wrap">
 
   <header class="masthead">
-    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
-    <div class="masthead-right">
-      <p class="since">Greensboro, North Carolina — since 2015</p>
+    <div class="masthead-top">
+      <p class="wordmark"><a href="/">A Decent Conversation</a></p>
       <details class="nav">
         <summary aria-label="Menu">
           <span class="bar"></span>
@@ -349,6 +344,7 @@
         </nav>
       </details>
     </div>
+    <p class="since">GSO, NC since 2015</p>
   </header>
 
   <section class="pagehead">
