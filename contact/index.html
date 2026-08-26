@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions before you come? — A Decent Conversation</title>
+<meta name="description" content="Ask something before you come — it goes straight to Trey. Or skip it and just show up Wednesday at 7:15.">
+
+<meta property="og:title" content="Questions before you come? — A Decent Conversation">
+<meta property="og:description" content="Ask something before you come — it goes straight to Trey. Or skip it and just show up Wednesday at 7:15.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adecentconversation.com/contact">
+<meta property="og:image" content="/img/social-preview.png">
+
+<!--
+  A DECENT CONVERSATION — /contact
+  Split out from the homepage so the form has its own URL.
+  Lives at /contact/index.html so the URL renders clean.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:      #15181C;
+    --ground:   #DDE3E6;
+    --paper:    #F1F4F4;
+    --graphite: #5A6367;
+    --brass:    #8F6A15;
+    --rule:     rgba(21, 24, 28, 0.22);
+
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --body:    "Literata", Georgia, serif;
+    --util:    "DM Mono", ui-monospace, monospace;
+
+    --measure: 34rem;
+    --gutter:  clamp(1.25rem, 5vw, 3rem);
+    --step:    clamp(2.75rem, 7vw, 4.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:      #E7EBEC;
+      --ground:   #14181B;
+      --paper:    #1C2125;
+      --graphite: #9AA3A8;
+      --brass:    #D0A344;
+      --rule:     rgba(231, 235, 236, 0.24);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+    line-height: 1.62;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .col { max-width: var(--measure); }
+
+  p { margin: 0 0 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+  a:hover { text-decoration-color: var(--brass); }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 1.5rem;
+  }
+
+  .table-rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: var(--step) 0;
+    transform-origin: left center;
+  }
+
+  .masthead {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .wordmark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .wordmark a { text-decoration: none; }
+  .wordmark a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
+
+  .masthead .since {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+  }
+
+  .pagehead { padding-top: clamp(2.5rem, 7vw, 4rem); }
+
+  .pagehead h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.1rem, 5.6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+  }
+
+  .intro { font-size: 1.12em; }
+
+  /* ---- Form ---- */
+  .ask {
+    background: var(--paper);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    max-width: 32rem;
+  }
+
+  .field { display: grid; gap: 0.4rem; margin-bottom: 1.1rem; }
+
+  .field label {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
+
+  .field input,
+  .field textarea {
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+    padding: 0.5rem 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .field textarea { resize: vertical; min-height: 5.5rem; }
+
+  .field input:focus,
+  .field textarea:focus {
+    outline: 0;
+    border-bottom-color: var(--brass);
+    border-bottom-width: 2px;
+    padding-bottom: calc(0.5rem - 1px);
+  }
+
+  button {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: var(--ground);
+    background: var(--ink);
+    border: 0;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  button:hover { background: var(--brass); }
+
+  .form-note {
+    font-family: var(--util);
+    font-size: 0.72rem;
+    color: var(--graphite);
+    margin: 1rem 0 0;
+  }
+
+  [aria-live] { font-size: 0.95em; }
+
+  footer {
+    padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+
+  footer a { color: var(--ink); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pagehead h1, .pagehead .intro {
+      animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    .pagehead .intro { animation-delay: 0.12s; }
+
+    .table-rule {
+      animation: draw 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(0.9rem); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes draw {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
+    <p class="since">Greensboro, North Carolina — since 2015</p>
+  </header>
+
+  <section class="pagehead">
+    <p class="eyebrow">Questions before you come?</p>
+    <h1>Ask something first.</h1>
+    <p class="intro col">
+      Walking into a room full of strangers at 7:15 in the morning might
+      feel a bit awkward. If you'd rather ask something first — anything —
+      this goes straight to Trey. Or just show up. Either works!
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="ask">
+    <form id="ask-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="5f5f296e-4f7c-4928-9e6f-64ed1209d172">
+      <input type="hidden" name="subject" value="Question from adecentconversation.com/contact">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="message">What would you like to know?</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+      <p class="form-note">You'll hear back within a day or two.</p>
+      <p class="form-note" id="form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer>
+    <a href="/">&larr; Back to the invitation</a>
+    <a href="/principles">Our principles &rarr;</a>
+  </footer>
+
+</div>
+
+<script>
+/* Form submit — stay on the page rather than bouncing to Web3Forms. */
+(function () {
+  var form = document.getElementById('ask-form');
+  var status = document.getElementById('form-status');
+  if (!form || !status) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var button = form.querySelector('button');
+    button.disabled = true;
+    status.textContent = 'Sending…';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.success) {
+          form.innerHTML =
+            '<p>Thanks — that\'s with Trey. You\'ll hear back within a day ' +
+            'or two. And you\'re welcome Wednesday either way.</p>';
+        } else {
+          throw new Error('rejected');
+        }
+      })
+      .catch(function () {
+        button.disabled = false;
+        status.textContent =
+          'That didn\'t send. Try again, or just come Wednesday at 7:15.';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>

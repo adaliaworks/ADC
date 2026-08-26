@@ -20,9 +20,9 @@
   ============================================================
 
   BEFORE PUBLISHING
-  [ ] Web3Forms access key — replace YOUR_WEB3FORMS_ACCESS_KEY below
-  [ ] /principles page exists (linked from principles section + footer)
-  [ ] /history page exists (linked from footer)
+  [x] Web3Forms access key — form moved to /contact, key set there
+  [x] /principles page exists (linked from principles section + footer)
+  [x] /history page exists (linked from footer)
   [ ] Illustrations dropped in: L1, L2, L3, L5 (see shot list)
   [ ] F1 favicon + F2 social preview generated
   [ ] Domain registration access shared with Ryan
@@ -310,83 +310,6 @@
 
   .facts dd { margin: 0; }
 
-  /* ---- Form ---- */
-  .ask {
-    background: var(--paper);
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-    max-width: 32rem;
-  }
-
-  .ask h2 {
-    font-family: var(--display);
-    font-weight: 600;
-    font-size: 1.35rem;
-    letter-spacing: -0.015em;
-    margin: 0 0 0.5rem;
-  }
-
-  .ask .lede {
-    font-size: 0.95em;
-    color: var(--graphite);
-    margin-bottom: 1.5rem;
-  }
-
-  .field { display: grid; gap: 0.4rem; margin-bottom: 1.1rem; }
-
-  .field label {
-    font-family: var(--util);
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--graphite);
-  }
-
-  .field input,
-  .field textarea {
-    font-family: var(--body);
-    font-size: 1rem;
-    color: var(--ink);
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid var(--rule);
-    padding: 0.5rem 0;
-    border-radius: 0;
-  }
-
-  .field textarea { resize: vertical; min-height: 5.5rem; }
-
-  .field input:focus,
-  .field textarea:focus {
-    outline: 0;
-    border-bottom-color: var(--brass);
-    border-bottom-width: 2px;
-    padding-bottom: calc(0.5rem - 1px);
-  }
-
-  button {
-    font-family: var(--display);
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: -0.01em;
-    color: var(--ground);
-    background: var(--ink);
-    border: 0;
-    padding: 0.8rem 1.6rem;
-    cursor: pointer;
-    transition: background 0.15s ease;
-  }
-
-  button:hover { background: var(--brass); }
-
-  .form-note {
-    font-family: var(--util);
-    font-size: 0.72rem;
-    color: var(--graphite);
-    margin: 1rem 0 0;
-  }
-
-  [aria-live] { font-size: 0.95em; }
-
   /* ---- Footer ---- */
   footer {
     padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
@@ -570,38 +493,14 @@
 
   <hr class="table-rule">
 
-  <section class="ask">
-    <h2>Questions before you come?</h2>
-    <p class="lede">
-      Walking into a room of strangers at 7:15 in the morning is a strange
-      thing to do. If you'd rather ask something first — anything — this
-      goes straight to Trey. Or skip it and just come. Both work.
+  <section>
+    <p class="eyebrow">Questions before you come?</p>
+    <p class="col">
+      Walking into a room full of strangers at 7:15 in the morning might
+      feel a bit awkward. If you'd rather ask something first — anything —
+      this goes straight to Trey. Or just show up. Either works!
     </p>
-
-    <form id="ask-form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-      <input type="hidden" name="subject" value="Question from adecentconversation.com">
-      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
-
-      <div class="field">
-        <label for="name">Your name</label>
-        <input id="name" name="name" type="text" autocomplete="name" required>
-      </div>
-
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" required>
-      </div>
-
-      <div class="field">
-        <label for="message">What would you like to know?</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-
-      <button type="submit">Send</button>
-      <p class="form-note">You'll hear back within a day or two.</p>
-      <p class="form-note" id="form-status" aria-live="polite"></p>
-    </form>
+    <p class="principles-more"><a href="/contact">Ask something &rarr;</a></p>
   </section>
 
   <hr class="table-rule">
@@ -694,41 +593,6 @@
         'The group breaks for the summer and picks back up in September.</p>');
     }
   } catch (e) { /* static line stands */ }
-})();
-
-/* Form submit — stay on the page rather than bouncing to Web3Forms. */
-(function () {
-  var form = document.getElementById('ask-form');
-  var status = document.getElementById('form-status');
-  if (!form || !status) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var button = form.querySelector('button');
-    button.disabled = true;
-    status.textContent = 'Sending…';
-
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' }
-    })
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        if (data.success) {
-          form.innerHTML =
-            '<p>Thanks — that\'s with Trey. You\'ll hear back within a day ' +
-            'or two. And you\'re welcome Wednesday either way.</p>';
-        } else {
-          throw new Error('rejected');
-        }
-      })
-      .catch(function () {
-        button.disabled = false;
-        status.textContent =
-          'That didn\'t send. Try again, or just come Wednesday at 7:15.';
-      });
-  });
 })();
 </script>
 
