@@ -138,7 +138,7 @@
 
   .eyebrow {
     font-family: var(--util);
-    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--graphite);
@@ -157,9 +157,6 @@
   /* ---- Masthead ---- */
   .masthead {
     padding-top: clamp(2rem, 6vw, 4rem);
-  }
-
-  .masthead-top {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -170,16 +167,9 @@
   .wordmark {
     font-family: var(--display);
     font-weight: 800;
-    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
     letter-spacing: -0.01em;
     margin: 0;
-  }
-
-  .masthead .since {
-    font-family: var(--util);
-    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
-    color: var(--graphite);
-    margin: 0.6rem 0 0;
   }
 
   /* ---- Nav ---- */
@@ -380,10 +370,19 @@
     color: var(--graphite);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 0.5rem 2rem;
   }
 
   .footer-links a { color: var(--ink); }
+
+  footer .since {
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    text-align: center;
+    margin: 0;
+  }
 
   /* ---- Motion: one orchestrated arrival, then nothing ---- */
   @media (prefers-reduced-motion: no-preference) {
@@ -414,23 +413,20 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="masthead-top">
-      <p class="wordmark">A Decent Conversation</p>
-      <details class="nav">
-        <summary aria-label="Menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </summary>
-        <nav class="nav-panel">
-          <a href="/" aria-current="page">Home</a>
-          <a href="/principles">Principles</a>
-          <a href="/history">History</a>
-          <a href="/contact">Ask Trey Anything</a>
-        </nav>
-      </details>
-    </div>
-    <p class="since">GSO, NC since 2015</p>
+    <p class="wordmark">A Decent Conversation</p>
+    <details class="nav">
+      <summary aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </summary>
+      <nav class="nav-panel">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/principles">Principles</a>
+        <a href="/history">History</a>
+        <a href="/contact">Ask Trey Anything</a>
+      </nav>
+    </details>
   </header>
 
   <section class="hero">
@@ -574,6 +570,7 @@
       <a href="/principles">Our principles &rarr;</a>
       <a href="/history">Now in our second decade, somehow &rarr;</a>
     </div>
+    <p class="since">GSO, NC since 2015</p>
   </footer>
 
 </div>

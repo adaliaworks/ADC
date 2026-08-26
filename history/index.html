@@ -108,7 +108,7 @@
 
   .eyebrow {
     font-family: var(--util);
-    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--graphite);
@@ -125,9 +125,6 @@
 
   .masthead {
     padding-top: clamp(2rem, 6vw, 4rem);
-  }
-
-  .masthead-top {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -138,20 +135,13 @@
   .wordmark {
     font-family: var(--display);
     font-weight: 800;
-    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
     letter-spacing: -0.01em;
     margin: 0;
   }
 
   .wordmark a { text-decoration: none; }
   .wordmark a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
-
-  .masthead .since {
-    font-family: var(--util);
-    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
-    color: var(--graphite);
-    margin: 0.6rem 0 0;
-  }
 
   /* ---- Nav ---- */
   .nav { position: relative; }
@@ -293,15 +283,29 @@
 
   footer {
     padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .footer-links {
     font-family: var(--util);
     font-size: 0.82rem;
     color: var(--graphite);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 0.5rem 2rem;
   }
 
-  footer a { color: var(--ink); }
+  .footer-links a { color: var(--ink); }
+
+  footer .since {
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    text-align: center;
+    margin: 0;
+  }
 
   @media (prefers-reduced-motion: no-preference) {
     .pagehead h1 {
@@ -328,23 +332,20 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="masthead-top">
-      <p class="wordmark"><a href="/">A Decent Conversation</a></p>
-      <details class="nav">
-        <summary aria-label="Menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </summary>
-        <nav class="nav-panel">
-          <a href="/">Home</a>
-          <a href="/principles">Principles</a>
-          <a href="/history" aria-current="page">History</a>
-          <a href="/contact">Ask Trey Anything</a>
-        </nav>
-      </details>
-    </div>
-    <p class="since">GSO, NC since 2015</p>
+    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
+    <details class="nav">
+      <summary aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </summary>
+      <nav class="nav-panel">
+        <a href="/">Home</a>
+        <a href="/principles">Principles</a>
+        <a href="/history" aria-current="page">History</a>
+        <a href="/contact">Ask Trey Anything</a>
+      </nav>
+    </details>
   </header>
 
   <section class="pagehead">
@@ -498,8 +499,11 @@
   </section>
 
   <footer>
-    <a href="/">&larr; Back to the invitation</a>
-    <a href="/principles">Our principles &rarr;</a>
+    <div class="footer-links">
+      <a href="/">&larr; Back to the invitation</a>
+      <a href="/principles">Our principles &rarr;</a>
+    </div>
+    <p class="since">GSO, NC since 2015</p>
   </footer>
 
 </div>
