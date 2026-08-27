@@ -25,13 +25,13 @@ them because what came up on its own was better. The question is
 insurance, not an agenda.
 
 Get there a few minutes early. That's honestly most of it — the room
-feels different when someone's already sitting down, and the first
+feels different when someone's already waiting at the door to let people in, and the first
 person through the door shouldn't wonder if they've got the right
-Wednesday.
+Wednesday, especially if they're a Visitor.
 
 ## Opening
 
-Start at 7:15, or close to it. People built their morning around this.
+Start sitting around 7:25, and if the conversation hasn't started by 7:35 you may need to pull the question out of your back pocket.
 
 If there's a Visitor, make sure they get names — not a formal
 go-around, just make sure nobody's sitting next to a stranger for
@@ -39,8 +39,8 @@ seventy-five minutes. If it seems useful, say the one thing a Visitor
 most needs to hear: there's no agenda, and they're not required to
 perform.
 
-Then open. Usually the conversation is already starting on its own
-while coffee happens — your job is just to notice when the side
+Then open. As you know, the conversation often starts naturally on its own
+over coffee — your job is just to notice when the side
 chatter wants to become the conversation, and let it. If the table's
 quiet, ask your pocket question and see what happens.
 
