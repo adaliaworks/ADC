@@ -4,13 +4,15 @@
 
 You've been at the table a while. Next Wednesday it's your turn to
 facilitate, and the Wednesday after that you're back in your regular
-seat. This page is your script to play your new role. It fits on one page because the job
-is small — and because keeping it small is most of the job.
+seat. Hopefully, this page outlines all you need to do the job. It
+fits on one page because the job is small — and because keeping it
+small is most of the job.
 
-One thing before anything else: the public-facing content on this site says no one runs
-the show, and that stays true the week you facilitate. You're not managing or governing
-the conversation. You're helping create the conditions in which the conversation can
-run itself — which it has been doing since 2015, with very little intervention.
+One thing before anything else: the rest of this site says no one
+runs the show, and that stays true the week you facilitate. We're not
+managing or governing the conversation, we're helping create the
+conditions in which it can run itself — which it's been doing since
+2015, with very little help from any of us.
 
 ---
 
