@@ -226,32 +226,6 @@
     figure.plate img.ink { filter: invert(1); }
   }
 
-  .ph {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 1.5rem;
-    text-align: center;
-    border: 1px dashed var(--rule);
-    color: var(--graphite);
-    font-family: var(--util);
-    font-size: 0.75rem;
-    line-height: 1.5;
-  }
-
-  .ph b {
-    font-weight: 500;
-    font-size: 0.85rem;
-    color: var(--ink);
-    letter-spacing: 0.04em;
-  }
-
-  .ph span { max-width: 34ch; }
-
-  .ph-h2 { aspect-ratio: 3 / 2; }
-
   /* Voices */
   .voices { background: var(--paper); padding: clamp(1.5rem, 4vw, 2.5rem); }
 
@@ -412,11 +386,9 @@
     </p>
 
     <figure class="plate">
-      <!-- H2 — replace with: <img src="/img/H2.svg" alt="A person standing at the edge of a table, leaning in to ask the seated group a question."> -->
-      <div class="ph ph-h2" role="img" aria-label="Illustration: a person standing at the edge of a table, leaning in to ask the seated group a question.">
-        <b>H2 — THE INTERRUPTION</b>
-        <span>A standing figure leaning in, asking; the seated group turned up toward them. Generic figure, no likeness. 3:2</span>
-      </div>
+      <!-- H2 PNG (3:2; same cast as H1 plus the newcomer — Trey's art, faces blank) -->
+      <img class="ink" src="/img/H2.png" width="1536" height="1024"
+        alt="A person standing at the edge of a table, leaning in to ask the seated group a question.">
     </figure>
   </section>
 
