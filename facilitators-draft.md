@@ -6,7 +6,7 @@ You've been at the table a while. Next Wednesday it's your turn to
 facilitate, and the Wednesday after that you're back in your regular
 seat. Hopefully, this page outlines all you need to do the job. It
 fits on one page because the job is small — and because keeping it
-small is most of the job.
+small is most of it.
 
 One thing before anything else: the rest of this site says no one
 runs the show, and that stays true the week you facilitate. We're not
@@ -30,6 +30,7 @@ Get there a few minutes early. That's honestly most of it — the room
 feels different when someone's already waiting at the door to let
 people in, and the first person through the door shouldn't wonder if
 they've got the right Wednesday, especially if they're a Visitor.
+Make sure you — or someone reliable — has badge access to the door.
 
 ## Opening
 
