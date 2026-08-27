@@ -221,6 +221,11 @@
   figure.plate { margin: 2rem 0 0; }
   figure.plate img { display: block; width: 100%; height: auto; }
 
+  /* Monochrome ink: flip black strokes white in dark mode */
+  @media (prefers-color-scheme: dark) {
+    figure.plate img.ink { filter: invert(1); }
+  }
+
   .ph {
     display: flex;
     flex-direction: column;
@@ -245,9 +250,7 @@
 
   .ph span { max-width: 34ch; }
 
-  .ph-h1 { aspect-ratio: 3 / 2; }
   .ph-h2 { aspect-ratio: 3 / 2; }
-  .ph-h3 { aspect-ratio: 16 / 7; }
 
   /* Voices */
   .voices { background: var(--paper); padding: clamp(1.5rem, 4vw, 2.5rem); }
@@ -368,11 +371,9 @@
     </p>
 
     <figure class="plate">
-      <!-- H1 — replace with: <img src="/img/H1.svg" alt="Two people at a small table with plenty of empty space around them."> -->
-      <div class="ph ph-h1" role="img" aria-label="Illustration: two people at a small table with plenty of empty space around them.">
-        <b>H1 — TWO AT A TABLE, 2015</b>
-        <span>Two figures at a small table, sparse, a little tentative. 3:2</span>
-      </div>
+      <!-- H1 PNG (3:2; spec said two figures — Trey's art has three, faces blank) -->
+      <img class="ink" src="/img/H1.png" width="1536" height="1024"
+        alt="Three people spaced around a mostly empty table, with unused chairs between them.">
     </figure>
   </section>
 
@@ -436,11 +437,9 @@
     </p>
 
     <figure class="plate">
-      <!-- H3 — replace with: <img src="/img/H3.svg" alt="A crowded table of many people, figures overlapping, mid-conversation."> -->
-      <div class="ph ph-h3" role="img" aria-label="Illustration: a crowded table of many people, figures overlapping, mid-conversation.">
-        <b>H3 — THE FULL TABLE NOW</b>
-        <span>A dozen-plus figures, table line running full width, abundant and slightly noisy. 16:7</span>
-      </div>
+      <!-- H3 PNG (3:2; final spec is 16:7 — Trey's art, faces blank) -->
+      <img class="ink" src="/img/H3.png" width="1536" height="1024"
+        alt="A crowded table of many people, figures overlapping, mid-conversation.">
     </figure>
   </section>
 
