@@ -3,10 +3,9 @@
 *For facilitators — unlisted. Reachable at /facilitators; not linked from the site.*
 
 You've been at the table a while. Next Wednesday it's your turn to
-facilitate, and the Wednesday after that you're back in your regular
-seat. Hopefully, this page outlines all you need to do the job. It
-fits on one page because the job is small — and because keeping it
-small is most of it.
+facilitate, and the week after that you'll be back in your regular
+seat. This page covers all you should need to fill your temporary
+role.
 
 One thing before anything else: the rest of this site says no one
 runs the show, and that stays true the week you facilitate. We're not
