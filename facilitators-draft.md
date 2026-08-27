@@ -25,13 +25,14 @@ them because what came up on its own was better. The question is
 insurance, not an agenda.
 
 Get there a few minutes early. That's honestly most of it — the room
-feels different when someone's already waiting at the door to let people in, and the first
-person through the door shouldn't wonder if they've got the right
-Wednesday, especially if they're a Visitor.
+feels different when someone's already waiting at the door to let
+people in, and the first person through the door shouldn't wonder if
+they've got the right Wednesday, especially if they're a Visitor.
 
 ## Opening
 
-Start sitting around 7:25, and if the conversation hasn't started by 7:35 you may need to pull the question out of your back pocket.
+Start sitting around 7:25, and if the conversation hasn't started by
+7:35 you may need to pull the question out of your back pocket.
 
 If there's a Visitor, make sure they get names — not a formal
 go-around, just make sure nobody's sitting next to a stranger for
@@ -39,8 +40,8 @@ seventy-five minutes. If it seems useful, say the one thing a Visitor
 most needs to hear: there's no agenda, and they're not required to
 perform.
 
-Then open. As you know, the conversation often starts naturally on its own
-over coffee — your job is just to notice when the side
+Then open. As you know, the conversation often starts naturally on
+its own over coffee — your job is just to notice when the side
 chatter wants to become the conversation, and let it. If the table's
 quiet, ask your pocket question and see what happens.
 
@@ -52,21 +53,25 @@ you won't need any of them:
 
 **Let silence sit.** A quiet table isn't a problem you need to solve.
 Silence is usually somebody deciding whether to say the true thing,
-and filling it takes that chance away from them. If you notice a prolonged silence (which is rare!), start counting to 5 before you attempt to fill it.
+and filling it takes that chance away from them. If you notice a
+prolonged silence (which is rare!), start counting to 5 before you
+attempt to fill it.
 
 **Look down the table.** The soft-spoken observation from the far end
 changes the morning more often than not — but only if it gets aired.
 "I'd like to hear from some folks we haven't heard from" is allowed.
 Calling on someone by name is not the same thing; don't put anyone on
-the spot unless you have enough of a relationship with them to know there's mutual trust. You're giving them room to participate, not forcing them to speak up.
+the spot unless you have enough of a relationship with them to know
+there's mutual trust. You're giving them room to participate, not
+forcing them to speak up.
 
 **Keep it to one conversation.** When the table splits in two, wait a
 moment — it may re-merge on its own. If it doesn't, bring one
 thread to the whole table: "say that louder, I think everyone wants to
 hear it."
 
-**Steer toward our little lives, not the national news.** When the world shows up at
-the table, the question isn't who's right about it. It's how each of
+**Steer toward our little lives, not the national news.** When the
+world shows up at the table, the question isn't who's right about it. It's how each of
 us is living in it. One honest "how has that landed on you?" turns a
 debate back into a conversation.
 
@@ -94,8 +99,12 @@ one worth repeating at the door.
 
 ## What we don't do
 
-We try not to teach, preach, or perform. When appropriate, we can summarize at the end or even repeat something back along the way. You don't need
-opinions ready, and the less we talk, the better the conversation tends to be. If nobody remembers afterward who facilitated, we probably did a great job!
+We try not to teach, preach, or perform. When appropriate, we can
+summarize at the end or even repeat something back along the way.
+We don't need
+opinions ready, and the less we talk, the better the conversation
+tends to be. If nobody remembers afterward who facilitated, we
+probably did a great job!
 
 ## Back to your seat
 
@@ -103,7 +112,9 @@ Next Wednesday someone else does this and you're a member again —
 which is the real reason the job stays small. Nobody's building a
 following; we're taking turns keeping the conversation going.
 
-If you're not sure you're up for it: that hesitation is sort of what makes you qualified. The people who worry about doing this well are the
+If you're not sure you're up for it: that hesitation is sort of what
+makes you qualified. The people who worry about doing this well are
+the
 ones who do. And if you want to talk it through first, that's what
 [Ask Trey Anything](/contact) is for.
 
@@ -117,8 +128,6 @@ ones who do. And if you want to talk it through first, that's what
 - **The pocket-question example** ("what's something you changed your
   mind about") is invented — swap in a real ADC-tested question if
   one's canonical.
-- **7:15 "or close to it"** — I hedged. If start time is actually
-  strict, cut the hedge.
 - **The Visitor beat** assumes facilitators handle first-timers. If
   that's actually Trey's/whoever-invited-them's job, this section
   shrinks.
