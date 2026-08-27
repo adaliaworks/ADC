@@ -52,9 +52,9 @@ required to perform.
 
 ## During
 
-Mostly, nothing. You're a member who happens to be watching the room a
-little more than usual. There are only a few moves, and most mornings
-you won't need any of them:
+Mostly, nothing. You're still a member — just one watching the room
+a little more than usual. There are only a few moves, and most
+mornings you won't need any of them:
 
 **Let silence sit.** A quiet table isn't a problem you need to solve.
 Silence is usually somebody deciding whether to say the true thing,
@@ -65,10 +65,10 @@ attempt to fill it.
 **Look down the table.** The soft-spoken observation from the far end
 changes the morning more often than not — but only if it gets aired.
 "I'd like to hear from some folks we haven't heard from" is allowed.
-Calling on someone by name is not the same thing; don't put anyone on
-the spot unless you have enough of a relationship with them to know
-there's mutual trust. You're giving them room to participate, not
-forcing them to speak up.
+Calling on someone by name is not the same thing; don't put anyone
+on the spot unless you know them well enough to be sure it lands as
+an invitation. You're giving them room to participate, not forcing
+them to speak up.
 
 **Keep it to one conversation.** When the table splits in two, wait a
 moment — it may re-merge on its own. If it doesn't, bring one
