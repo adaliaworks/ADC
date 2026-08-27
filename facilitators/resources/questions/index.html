@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Where this comes from — A Decent Conversation</title>
-<meta name="description" content="The frameworks and working craft behind the facilitator's page: Bohm dialogue, the Circle of Trust, The Art of Gathering, and the ordinary mechanics.">
+<title>Questions — A Decent Conversation</title>
+<meta name="description" content="Big questions and little questions for the facilitator's back pocket.">
 <meta name="robots" content="noindex">
 
-<meta property="og:title" content="Where this comes from — A Decent Conversation">
-<meta property="og:description" content="The frameworks and working craft behind the facilitator's page: Bohm dialogue, the Circle of Trust, The Art of Gathering, and the ordinary mechanics.">
+<meta property="og:title" content="Questions — A Decent Conversation">
+<meta property="og:description" content="Big questions and little questions for the facilitator's back pocket.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://adecentconversation.com/facilitators/resources">
+<meta property="og:url" content="https://adecentconversation.com/facilitators/resources/questions">
 <meta property="og:image" content="/img/social-preview.png">
 
 <!--
-  A DECENT CONVERSATION — /facilitators/resources
+  A DECENT CONVERSATION — /facilitators/resources/questions
   Unlisted: reachable by URL, noindexed, not linked from the main nav.
   Part of the facilitators section (see PR #5).
 -->
@@ -246,6 +246,35 @@
     font-size: 0.85rem;
   }
 
+  .q-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--step) clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  @media (min-width: 46rem) {
+    .q-cols { grid-template-columns: 1fr 1fr; }
+  }
+
+  .q-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+    font-size: 0.95em;
+  }
+
+  .q-src {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+    margin: 0 0 1rem;
+  }
+
+  .q-list + .q-src { margin-top: 1.75rem; }
+
   footer {
     padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
     display: grid;
@@ -319,52 +348,113 @@
     <span class="sep">/</span>
     <a href="/facilitators">Facilitators</a>
     <span class="sep">/</span>
-    <span aria-current="page">Resources</span>
+    <a href="/facilitators/resources">Resources</a>
+    <span class="sep">/</span>
+    <span aria-current="page">Questions</span>
   </nav>
 
   <section class="pagehead">
     <p class="eyebrow">Resources</p>
-    <h1>Where this comes from.</h1>
+    <h1>Questions.</h1>
     <p class="intro col">
-      Nothing here is required reading. The conversation ran for years
-      before anyone at the table had read any of it, and the
-      <a href="/facilitators">facilitator's page</a> already holds
-      everything a Wednesday needs. But if you like knowing where an idea
-      came from — or you want more than one page's worth — this is the
-      shelf.
+      A question in the back pocket is insurance, not an agenda — most
+      Wednesdays never need one. But when the table's still quiet at
+      7:35, it helps to have options. Big questions open a morning.
+      Little questions open a person. Both work.
     </p>
   </section>
 
   <hr class="table-rule">
 
-  <section class="section">
-    <ul class="moves">
-      <li><b><a href="/facilitators/resources/bohm-dialogue">Bohm
-        dialogue.</a></b> The physicist who argued that a real conversation
-        needs a host, not a director — the closest thing we have to a
-        founding theory, even though nobody at the first table had read
-        it.</li>
-      <li><b><a href="/facilitators/resources/circle-of-trust">The Circle
-        of Trust.</a></b> Parker Palmer's rules for rooms where nobody
-        fixes anybody — including the touchstone our fourth principle
-        rhymes with.</li>
-      <li><b><a href="/facilitators/resources/art-of-gathering">The Art of
-        Gathering.</a></b> Priya Parker on why openings and endings deserve
-        better than logistics, and why a light hand still has to be a real
-        one.</li>
-      <li><b><a href="/facilitators/resources/craft">The working
-        craft.</a></b> The ordinary mechanics with no famous name attached:
-        silence, quiet voices, and the person who talks too much.</li>
-      <li><b><a href="/facilitators/resources/questions">Questions.</a></b>
-        A back-pocket list, big and little — borrowed from the xkcd
-        Survey, Signal v. Noise, and a decade of Wednesdays.</li>
-    </ul>
+  <section class="section q-cols">
+    <div>
+      <h2>Big questions</h2>
+      <p class="q-src">Ours, mostly — pointed at the stories rather than the opinions.</p>
+      <ul class="q-list">
+        <li>What's something you changed your mind about, and what changed it?</li>
+        <li>What did you want to be at seventeen, and how close did you land?</li>
+        <li>What part of your story do you usually leave out?</li>
+        <li>What's a belief you hold that you can't fully defend?</li>
+        <li>What would you do with a completely free year?</li>
+        <li>What does "enough" look like for you?</li>
+        <li>What are you practicing at, these days?</li>
+        <li>What's the best advice you've ignored?</li>
+        <li>When have you been most afraid, and what did you do?</li>
+        <li>What's something your parents got right that took you years to see?</li>
+        <li>What loss has taught you the most?</li>
+        <li>If your life had chapters, what would this one be called?</li>
+        <li>What do you hope people say about you when you're not in the room?</li>
+        <li>What's work for?</li>
+        <li>What's the difference between the person you are and the person people meet?</li>
+        <li>What keeps you up at night that didn't five years ago?</li>
+        <li>What's something you did that you once thought you couldn't?</li>
+        <li>Where do you feel most like yourself?</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Little questions</h2>
+      <p class="q-src">From <a href="https://m.signalvnoise.com/the-25-most-popular-icebreaker-questions-based-on-four-years-of-data/">Signal v. Noise's four years of icebreaker data</a>:</p>
+      <ul class="q-list">
+        <li>What was your first job?</li>
+        <li>Have you ever met anyone famous?</li>
+        <li>What are you reading right now?</li>
+        <li>If you could pick up a new skill in an instant, what would it be?</li>
+        <li>Who's someone you really admire?</li>
+        <li>Seen any good movies lately you'd recommend?</li>
+        <li>Got any favorite quotes?</li>
+        <li>Been pleasantly surprised by anything lately?</li>
+        <li>What was your favorite band 10 years ago?</li>
+        <li>What's your earliest memory?</li>
+        <li>Been anywhere recently for the first time?</li>
+        <li>What's your favorite family tradition?</li>
+        <li>Who had the most influence on you growing up?</li>
+        <li>What was the first thing you bought with your own money?</li>
+        <li>What's something you want to do in the next year that you've never done before?</li>
+        <li>Seen anything lately that made you smile?</li>
+        <li>What's your favorite place you've ever visited?</li>
+        <li>Have you had your 15 minutes of fame yet?</li>
+        <li>What's the best advice you've ever heard?</li>
+        <li>How do you like your eggs?</li>
+        <li>Do you have a favorite charity you wish more people knew about?</li>
+        <li>Got any phobias you'd like to break?</li>
+        <li>Have you returned anything you've purchased recently? Why?</li>
+        <li>Do you collect anything?</li>
+        <li>What's your favorite breakfast cereal?</li>
+      </ul>
+      <p class="q-src">From <a href="https://xkcd.com/1572/">the xkcd Survey</a> (Randall Munroe):</p>
+      <ul class="q-list">
+        <li>Have you ever been in a plane?</li>
+        <li>Have you ever been skydiving?</li>
+        <li>What's a really popular food that you don't like?</li>
+        <li>When you look at a blue sky, do you see those swirly floaters in your vision?</li>
+        <li>Have you ever had a car run out of gas while you were driving it?</li>
+        <li>What word can you never seem to spell on the first try?</li>
+        <li>Do you eat condiments directly out of the fridge as a snack?</li>
+        <li>When you adjust a thermostat that was set by someone else, it's usually because you want the room to be ...</li>
+        <li>What color is the shirt/dress/upper-body-clothing you're wearing right now, if any?</li>
+        <li>Do you know your Myers-Briggs type?</li>
+        <li>Do you know your astrological sign?</li>
+        <li>Do you feel sleepy a lot?</li>
+        <li>Do you regularly stay awake much later than you meant to?</li>
+        <li>When you think about stuff on the internet, where do you picture it being physically located? Even if you know it's not really how things work, is there a place you imagine websites and social media posts sitting before you look at them? If so, where is it?</li>
+        <li>Can you roll your tongue?</li>
+        <li>Can you pick things up with your toes?</li>
+        <li>How old are you?</li>
+        <li>Do you usually remember your dreams?</li>
+        <li>Do you have strong opinions about text editors?</li>
+        <li>How do you feel about emoji?</li>
+        <li>Does it ever snow where you live?</li>
+        <li>Are you nervous about flying?</li>
+        <li>On a scale of 1 to 5, which number is your favorite?</li>
+        <li>Have you ever thrown out all your different pairs of socks/underwear, bought a bunch of replacements that were all one kind, and then told all your friends how great it was and how they should do it too?</li>
+      </ul>
+    </div>
   </section>
 
   <footer>
     <div class="footer-links">
-      <a href="/facilitators">&larr; Facilitators</a>
-      <a href="/contact">Ask Trey Anything &rarr;</a>
+      <a href="/facilitators/resources">&larr; All resources</a>
+      <a href="/facilitators">Facilitators &rarr;</a>
     </div>
     <p class="since">GSO, NC since 2015</p>
   </footer>
