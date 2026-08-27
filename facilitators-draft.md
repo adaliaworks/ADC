@@ -52,7 +52,7 @@ required to perform.
 
 ## During
 
-Mostly, nothing. You're still a member — just one watching the room
+Mostly, nothing. You're still a Member — just one watching the room
 a little more than usual. There are only a few moves, and most
 mornings you won't need any of them:
 
@@ -104,16 +104,15 @@ one worth repeating at the door.
 
 ## What we don't do
 
-We try not to teach, preach, or perform. When appropriate, we can
-summarize at the end or even repeat something back along the way.
-We don't need
-opinions ready, and the less we talk, the better the conversation
-tends to be. If nobody remembers afterward who facilitated, we
-probably did a great job!
+We try not to teach, preach, or perform — though summarizing at the
+end, or repeating something back along the way, is fine when it
+helps. We don't need opinions ready, and the less we talk, the
+better the conversation tends to be. If nobody remembers afterward
+who facilitated, we probably did a great job!
 
 ## Back to your seat
 
-Next Wednesday someone else does this and you're a member again —
+Next Wednesday someone else does this and you're a Member again —
 which is the real reason the job stays small. Nobody's building a
 following; we're taking turns keeping the conversation going.
 
@@ -123,27 +122,3 @@ the
 ones who do. And if you want to talk it through first, that's what
 [Ask Trey Anything](/contact) is for.
 
----
-
-## Draft notes (not part of the page — for review)
-
-- **Title options.** "Same table, different seat." is my lead. Others
-  considered: "Keeping the seats warm." / "The facilitator's seat." /
-  "How to run the thing nobody runs."
-- **The pocket-question example** ("what's something you changed your
-  mind about") is invented — swap in a real ADC-tested question if
-  one's canonical.
-- **Sources informing the draft** (none cited on the page itself, per
-  house style): Bohm's dialogue-host model — the host tends conditions
-  and otherwise stays out ([david-bohm.net](http://www.david-bohm.net/dialogue/facilitation_purpose.html),
-  [Dialogue: A Proposal](https://www.humiliationstudies.org/documents/BohmDialogue.pdf));
-  Parker Palmer's Circle of Trust touchstones — no fixing, saving,
-  advising, or correcting; honest open questions instead of counsel
-  ([Courage & Renewal touchstones](https://www.flumc.org/files/fileslibrary/congregational+vitality/church+leadership/couragerenewal-circle-of-trust-touchstones-(c)2015+(1).pdf));
-  Priya Parker on not wasting openings/closings on logistics and not
-  letting gatherings peter out ([Art of Gathering notes](https://www.tosummarise.com/book-summary-the-art-of-gathering-by-priya-parker/));
-  standard practice on silence, drawing out quiet voices without
-  cold-calling, and settling dominant talkers
-  ([Community Tool Box](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main),
-  [Voltage Control](https://voltagecontrol.com/articles/how-to-engage-quiet-participants-techniques-for-facilitators/),
-  [SessionLab](https://www.sessionlab.com/blog/group-facilitation/)).
