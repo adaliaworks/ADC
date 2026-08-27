@@ -92,9 +92,9 @@ can return the conversation to its owner.
 
 ## Closing
 
-Land at 8:30. (Some) people have jobs, and a clean ending beats a fade —
-don't let the morning peter out while half the table checks their
-watch. A minute or two before time, find a natural seam and use it.
+Try to land the plane by 8:30. (Some) people have jobs, and a clean
+ending beats a slow fade — don't let the morning peter out while
+half the table checks their watch. A minute or two before time, find a natural seam and use it.
 You don't need a summary or a closing thought; "that's time — see
 everyone next week" has worked in a pinch, for a decade.
 
@@ -133,9 +133,6 @@ ones who do. And if you want to talk it through first, that's what
 - **The pocket-question example** ("what's something you changed your
   mind about") is invented — swap in a real ADC-tested question if
   one's canonical.
-- **Confidentiality line at closing** — "say the principle out loud on
-  the way out" — flag if that's not actually done and reads as
-  invented ritual.
 - **Sources informing the draft** (none cited on the page itself, per
   house style): Bohm's dialogue-host model — the host tends conditions
   and otherwise stays out ([david-bohm.net](http://www.david-bohm.net/dialogue/facilitation_purpose.html),
