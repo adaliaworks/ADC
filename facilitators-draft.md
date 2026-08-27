@@ -34,19 +34,21 @@ Make sure you — or someone reliable — has badge access to the door.
 
 ## Opening
 
-Start sitting around 7:25, and if the conversation hasn't started by
-7:35 you may need to pull the question out of your back pocket.
+Start sitting around 7:25. As you know, the conversation often
+starts naturally on its own over coffee — your job is just to notice
+when the side chatter wants to become the conversation, and let it.
+If nothing's caught by 7:35, pull the question out of your back
+pocket and see what happens.
 
 If there's a Visitor, make sure they get names — not a formal
 go-around, just make sure nobody's sitting next to a stranger for
-seventy-five minutes. If it seems useful, say the one thing a Visitor
-most needs to hear: there's no agenda, and they're not required to
-perform.
-
-Then open. As you know, the conversation often starts naturally on
-its own over coffee — your job is just to notice when the side
-chatter wants to become the conversation, and let it. If the table's
-quiet, ask your pocket question and see what happens.
+seventy-five minutes. Whoever brought them will usually speak up,
+but don't count on it: if you look around and don't recognize
+someone, ask for a quick intro. Worst case they've been coming for a
+while — that's never a problem, and it beats missing a newcomer who
+showed up on their own. If it seems useful, say the one thing a
+Visitor most needs to hear: there's no agenda, and they're not
+required to perform.
 
 ## During
 
@@ -131,9 +133,6 @@ ones who do. And if you want to talk it through first, that's what
 - **The pocket-question example** ("what's something you changed your
   mind about") is invented — swap in a real ADC-tested question if
   one's canonical.
-- **The Visitor beat** assumes facilitators handle first-timers. If
-  that's actually Trey's/whoever-invited-them's job, this section
-  shrinks.
 - **Confidentiality line at closing** — "say the principle out loud on
   the way out" — flag if that's not actually done and reads as
   invented ritual.
