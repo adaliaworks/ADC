@@ -10,7 +10,7 @@
 <meta property="og:description" content="Pull up a seat for the most decent conversation you'll have all week. Wednesdays, 7:15 a.m., Greensboro. Since 2015.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://adecentconversation.com/">
-<!-- F2 from the shot list: L1 cropped to 1200x630, exported as PNG -->
+<!-- F2: L1 placeholder fit to 1200x630 on white; regenerate when final L1 lands -->
 <meta property="og:image" content="/img/social-preview.png">
 
 <!--
@@ -23,8 +23,8 @@
   [x] Web3Forms access key — form moved to /contact, key set there
   [x] /principles page exists (linked from principles section + footer)
   [x] /history page exists (linked from footer)
-  [ ] Illustrations dropped in: L1, L2, L3, L5 (see shot list)
-  [ ] F1 favicon + F2 social preview generated
+  [~] Illustrations: L1 placeholder PNG in; L2, L3, L5 pending (see img/shot-list.md)
+  [ ] F1 favicon pending; F2 social preview generated from L1
   [ ] Domain registration access shared with Ryan
 
   CONSENT (all now relevant to /history, not this page)
@@ -254,6 +254,11 @@
 
   figure.plate img { display: block; width: 100%; height: auto; }
 
+  /* Monochrome ink placeholder: flip black strokes white in dark mode */
+  @media (prefers-color-scheme: dark) {
+    figure.plate img.ink { filter: invert(1); }
+  }
+
   /* Placeholder box — delete each as the real SVG lands */
   .ph {
     display: flex;
@@ -279,7 +284,6 @@
 
   .ph span { max-width: 34ch; }
 
-  .ph-l1 { aspect-ratio: 16 / 7; }
   .ph-l2 { aspect-ratio: 1 / 1; }
   .ph-l3 { aspect-ratio: 5 / 1; }
   .ph-l5 { aspect-ratio: 2 / 3; }
@@ -437,11 +441,9 @@
     </p>
 
     <figure class="plate">
-      <!-- L1 — replace with: <img src="/img/L1.svg" alt="Four people talking around a table, with one chair pulled out and empty."> -->
-      <div class="ph ph-l1" role="img" aria-label="Illustration: four people talking around a table with one chair pulled out and empty.">
-        <b>L1 — THE EMPTY CHAIR</b>
-        <span>Three or four figures mid-conversation, seen from behind. One seat pulled slightly out and unfilled, nearest the viewer. 16:7</span>
-      </div>
+      <!-- L1 placeholder PNG (3:2; final spec is 16:7 SVG — see img/shot-list.md) -->
+      <img class="ink" src="/img/L1.png" width="1536" height="1024"
+        alt="Four people mid-conversation around a table; a fifth arriving, hand on an empty chair pulled out nearest the viewer.">
     </figure>
   </section>
 
