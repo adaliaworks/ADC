@@ -52,61 +52,58 @@ you won't need any of them:
 
 **Let silence sit.** A quiet table isn't a problem you need to solve.
 Silence is usually somebody deciding whether to say the true thing,
-and filling it takes that chance away from them.
+and filling it takes that chance away from them. If you notice a prolonged silence (which is rare!), start counting to 5 before you attempt to fill it.
 
 **Look down the table.** The soft-spoken observation from the far end
-changes the morning more often than not — but only if it gets room.
+changes the morning more often than not — but only if it gets aired.
 "I'd like to hear from some folks we haven't heard from" is allowed.
 Calling on someone by name is not the same thing; don't put anyone on
-the spot.
+the spot unless you have enough of a relationship with them to know there's mutual trust. You're giving them room to participate, not forcing them to speak up.
 
-**Keep it one conversation.** When the table splits in two, wait a
-moment — it often re-merges on its own. If it doesn't, bring one
+**Keep it to one conversation.** When the table splits in two, wait a
+moment — it may re-merge on its own. If it doesn't, bring one
 thread to the whole table: "say that louder, I think everyone wants to
 hear it."
 
-**Steer toward the life, not the news.** When the world shows up at
+**Steer toward our little lives, not the national news.** When the world shows up at
 the table, the question isn't who's right about it. It's how each of
 us is living in it. One honest "how has that landed on you?" turns a
 debate back into a conversation.
 
-**Ask about what was just said.** Our most-decent conversations happen
+**Ask about what someone just said.** Our most-decent conversations happen
 when someone follows the thread instead of steering back to what they
-wanted to talk about. As facilitator you get to model that. A short,
+wanted to talk about. As facilitators we get to model that. A short,
 honest question beats a smart comment every time.
 
 **Don't fix anybody.** When someone shares something hard, the table's
 job is to hear it, not to solve it. If the advice starts flowing, a
 question aimed back at the person — "what do you think you'll do?" —
-returns the conversation to its owner.
+can return the conversation to its owner.
 
 ## Closing
 
-Land at 8:30. People have jobs, and a clean ending beats a fade —
+Land at 8:30. (Some) people have jobs, and a clean ending beats a fade —
 don't let the morning peter out while half the table checks their
 watch. A minute or two before time, find a natural seam and use it.
 You don't need a summary or a closing thought; "that's time — see
-everyone next week" has worked for a decade.
+everyone next week" has worked in a pinch, for a decade.
 
 If something was shared that clearly needs to stay at the table, it's
 fine to say the principle out loud on the way out. That's the only
 one worth repeating at the door.
 
-## What you don't do
+## What we don't do
 
-You don't teach, preach, perform, or summarize. You don't need
-opinions ready, and the weeks you talk least are usually the weeks
-you facilitated best. If nobody remembers afterward who facilitated,
-it worked.
+We try not to teach, preach, or perform. When appropriate, we can summarize at the end or even repeat something back along the way. You don't need
+opinions ready, and the less we talk, the better the conversation tends to be. If nobody remembers afterward who facilitated, we probably did a great job!
 
 ## Back to your seat
 
 Next Wednesday someone else does this and you're a member again —
 which is the real reason the job stays small. Nobody's building a
-following; we're taking turns keeping the seats warm.
+following; we're taking turns keeping the conversation going.
 
-If you're not sure you're up for it: that hesitation is roughly the
-qualification. The people who worry about doing this well are the
+If you're not sure you're up for it: that hesitation is sort of what makes you qualified. The people who worry about doing this well are the
 ones who do. And if you want to talk it through first, that's what
 [Ask Trey Anything](/contact) is for.
 
