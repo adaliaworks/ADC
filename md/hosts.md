@@ -1,15 +1,15 @@
 # Same table, different seat.
 
-*For facilitators — unlisted. Lives at /facilitators; not linked from
-the site nav. This file is the copy source for facilitators/index.html
+*For Hosts — unlisted. Lives at /hosts; not linked from
+the site nav. This file is the copy source for hosts/index.html
 — exported from the live HTML Aug 27, 2026.*
 
 You've been at the table a while. Soon it'll be your turn to
-facilitate, and the week after that you'll be back in your regular
+host, and the week after that you'll be back in your regular
 seat.
 
 First things first: the rest of this site says no one
-runs the show, and that remains true the week you facilitate. You're not responsible for 
+runs the show, and that remains true the week you host. You're not responsible for 
 managing or governing the conversation, you're just helping create the
 conditions in which it can run smoothly.
 
@@ -17,7 +17,7 @@ conditions in which it can run smoothly.
 
 ## Before
 
-Put a question or two in your [back pocket](/facilitators/resources/questions).
+Put a question or two in your [back pocket](/hosts/resources/questions).
 Something close to the heart, that might prompt a story instead of an opinion — "what's something you changed your mind about, and
 what changed it?" beats "what does everyone think about X?" You may not use it, but you'll be glad you had it ready. Trey brought starter questions to the first
 month of meetings in 2015 and dropped them because what came up on
@@ -81,7 +81,7 @@ on you?" turns a debate back into a conversation.
 
 **Ask about what someone just said.** Our most-decent conversations
 happen when someone follows the thread instead of steering back to
-what they wanted to talk about. As facilitators we get to model that.
+what they wanted to talk about. As Hosts we get to model that.
 A short, honest question based on what someone just said beats a smart comment every time.
 
 **Don't fix anybody.** When someone shares something hard, the
@@ -105,13 +105,13 @@ fine to remind people "what's said at the table stays at the table" before wrapp
 
 Try not to teach, preach, or perform — though summarizing at the
 end, or repeating something back along the way, is fine when it
-helps. You don't need to have opinions pre-loaded. The less a facilitator talks, the
+helps. You don't need to have opinions pre-loaded. The less a Host talks, the
 better the conversation tends to be. If nobody remembers afterward
-who facilitated, you probably did a great job!
+who hosted, you probably did a great job!
 
 ## Back to your old seat
 
-Next week someone else will facilitate and you'll be a Member again —
+Next week someone else will host and you'll be a Member again —
 which is one reason the job stays small. Nobody's building a
 following; we're taking turns keeping the conversation going.
 
@@ -123,15 +123,15 @@ that's what [Ask Trey Anything](/contact) is for.
 ## Where this comes from
 
 The host-not-director idea above is
-David Bohm's, from [Bohm dialogue](/facilitators/resources/bohm-dialogue);
+David Bohm's, from [Bohm dialogue](/hosts/resources/bohm-dialogue);
 the rule against fixing comes from Parker Palmer's
-[Circle of Trust](/facilitators/resources/circle-of-trust); the
+[Circle of Trust](/hosts/resources/circle-of-trust); the
 conviction that openings and endings deserve better than logistics
 is Priya Parker's, from
-[The Art of Gathering](/facilitators/resources/art-of-gathering);
+[The Art of Gathering](/hosts/resources/art-of-gathering);
 and the smaller mechanics — silence, quiet voices, the person who
 talks too much — are
-[ordinary facilitation craft](/facilitators/resources/craft),
+[ordinary facilitation craft](/hosts/resources/craft),
 collected rather than invented.
 
-[The full shelf →](/facilitators/resources)
+[The full shelf →](/hosts/resources)

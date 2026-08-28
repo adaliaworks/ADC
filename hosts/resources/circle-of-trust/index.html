@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Circle of Trust — A Decent Conversation</title>
+<meta name="description" content="Parker Palmer's touchstones — no fixing, saving, advising, or correcting — and what ADC borrows from them.">
+<meta name="robots" content="noindex">
+
+<meta property="og:title" content="The Circle of Trust — A Decent Conversation">
+<meta property="og:description" content="Parker Palmer's touchstones — no fixing, saving, advising, or correcting — and what ADC borrows from them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adecentconversation.com/hosts/resources/circle-of-trust">
+<meta property="og:image" content="/img/social-preview.png">
+
+<!--
+  A DECENT CONVERSATION — /hosts/resources/circle-of-trust
+  Unlisted: reachable by URL, noindexed, not linked from the main nav.
+  Part of the hosts section (see PR #5).
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:      #15181C;
+    --ground:   #DDE3E6;
+    --paper:    #F1F4F4;
+    --graphite: #5A6367;
+    --brass:    #8F6A15;
+    --rule:     rgba(21, 24, 28, 0.22);
+
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --body:    "Literata", Georgia, serif;
+    --util:    "DM Mono", ui-monospace, monospace;
+
+    --measure: 34rem;
+    --gutter:  clamp(1rem, 4vw, 2.4rem);
+    --step:    clamp(2.75rem, 7vw, 4.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:      #E7EBEC;
+      --ground:   #14181B;
+      --paper:    #1C2125;
+      --graphite: #9AA3A8;
+      --brass:    #D0A344;
+      --rule:     rgba(231, 235, 236, 0.24);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+    line-height: 1.62;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 55.2rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .col { max-width: var(--measure); }
+
+  p { margin: 0 0 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+  a:hover { text-decoration-color: var(--brass); }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .eyebrow {
+    font-family: var(--util);
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 1.5rem;
+  }
+
+  .table-rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: var(--step) 0;
+    transform-origin: left center;
+  }
+
+  .masthead {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .wordmark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.01rem, 2.5vw, 1.33rem);
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .wordmark a { text-decoration: none; }
+  .wordmark a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
+
+  /* ---- Nav ---- */
+  .nav { position: relative; }
+
+  .nav summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0;
+  }
+
+  .nav summary::-webkit-details-marker { display: none; }
+  .nav summary::marker { content: ""; }
+
+  .nav .bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--ink);
+    transition: background 0.15s ease;
+  }
+
+  .nav:hover .bar,
+  .nav[open] summary .bar { background: var(--brass); }
+
+  .nav-panel {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    display: grid;
+    min-width: 12rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 0.4rem;
+    z-index: 20;
+  }
+
+  .nav-panel a {
+    font-family: var(--util);
+    font-size: 0.85rem;
+    padding: 0.6rem 0.75rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .nav-panel a:hover { background: var(--ground); color: var(--brass); }
+  .nav-panel a[aria-current="page"] { color: var(--brass); }
+
+  /* ---- Breadcrumbs ---- */
+  .crumbs {
+    font-family: var(--util);
+    font-size: 0.78rem;
+    color: var(--graphite);
+    margin-top: 1.5rem;
+  }
+
+  .crumbs a { color: var(--ink); text-decoration: none; }
+  .crumbs a:hover { text-decoration: underline; text-decoration-color: var(--brass); }
+  .crumbs .sep { margin: 0 0.35rem; }
+
+  .pagehead { padding-top: clamp(2rem, 5.5vw, 3.25rem); }
+
+  .pagehead h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.1rem, 5.6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+  }
+
+  .intro { font-size: 1.12em; }
+
+  .section h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0 0 1.1rem;
+    text-wrap: balance;
+  }
+
+  .moves {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.15rem;
+    max-width: 38rem;
+  }
+
+  .moves b {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 0.98em;
+    letter-spacing: -0.005em;
+  }
+
+  .more-link {
+    font-family: var(--util);
+    font-size: 0.85rem;
+  }
+
+  .reading {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+    font-family: var(--util);
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: var(--step) 0 clamp(2.5rem, 6vw, 4rem);
+    display: grid;
+    gap: var(--step);
+  }
+
+  .footer-links {
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+  }
+
+  .footer-links a { color: var(--ink); }
+
+  footer .since {
+    font-family: var(--util);
+    font-size: 0.82rem;
+    color: var(--graphite);
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pagehead h1, .pagehead .intro {
+      animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    .pagehead .intro { animation-delay: 0.12s; }
+
+    .table-rule {
+      animation: draw 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(0.9rem); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes draw {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="wordmark"><a href="/">A Decent Conversation</a></p>
+    <details class="nav">
+      <summary aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </summary>
+      <nav class="nav-panel">
+        <a href="/">Home</a>
+        <a href="/principles">Principles</a>
+        <a href="/history">History</a>
+        <a href="/contact">Ask Trey Anything</a>
+      </nav>
+    </details>
+  </header>
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="/hosts">Hosts</a>
+    <span class="sep">/</span>
+    <a href="/hosts/resources">Resources</a>
+    <span class="sep">/</span>
+    <span aria-current="page">Circle of Trust</span>
+  </nav>
+
+  <section class="pagehead">
+    <p class="eyebrow">Resources</p>
+    <h1>The Circle of Trust.</h1>
+    <p class="intro col">
+      Parker Palmer is a Quaker writer and teacher who founded the Center
+      for Courage &amp; Renewal. A Circle of Trust is his name for a room
+      built so that people can hear themselves think — governed by a short
+      list of ground rules he calls touchstones. His circles often open
+      with a poem. Ours open with coffee. The rules still hold up.
+    </p>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="section">
+    <h2>The touchstone that matters most</h2>
+    <div class="col">
+      <p>
+        <b>No fixing, saving, advising, or correcting each other.</b>
+        Palmer calls this one of the hardest guidelines for people who
+        help others for a living, and the most important. When someone
+        shares something difficult, the reflex is to solve it — and the
+        solving, however well meant, takes the conversation away from the
+        person it belongs to. This is where the Host's
+        "don't fix anybody" comes from, nearly word for word.
+      </p>
+    </div>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="section">
+    <h2>Honest, open questions</h2>
+    <div class="col">
+      <p>
+        The touchstones' alternative to advice is the honest, open
+        question — his test being that you can't already know the answer
+        when you ask it. "Have you thought about seeing a therapist?" is
+        advice wearing a question mark. "What do you think you'll do?" is
+        a question. Palmer's phrase for what this does is worth keeping:
+        it helps people be heard into deeper speech.
+      </p>
+      <p>
+        His circles also practice what he calls double confidentiality:
+        what's said in the circle stays there, and nobody raises it with
+        the person afterward unless invited. If that sounds familiar, it's
+        because our <a href="/principles">fourth principle</a> is the same
+        idea wearing different clothes.
+      </p>
+    </div>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="section">
+    <h2>What we borrow, what we leave</h2>
+    <div class="col">
+      <p>
+        We borrow the no-fixing rule, the honest question, and the
+        confidentiality. We leave the retreat format, the trained
+        facilitators, and the poems — Palmer's circles are a designed
+        practice with a curriculum behind them, and ours is a table with
+        coffee on it. Different containers, same respect for what people
+        carry into the room.
+      </p>
+    </div>
+  </section>
+
+  <hr class="table-rule">
+
+  <section class="section">
+    <h2>Read more</h2>
+    <ul class="reading">
+      <li><a href="https://couragerenewal.org/">Center for Courage &amp; Renewal</a></li>
+      <li><a href="https://www.flumc.org/files/fileslibrary/congregational+vitality/church+leadership/couragerenewal-circle-of-trust-touchstones-(c)2015+(1).pdf">The Circle of Trust touchstones — one page, PDF</a></li>
+      <li><a href="https://www.amazon.com/s?k=a+hidden+wholeness+parker+palmer&amp;tag=adaliaworks-20">A Hidden Wholeness, Parker J. Palmer</a> — the book behind the circles</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/hosts/resources">&larr; All resources</a>
+      <a href="/hosts">Hosts &rarr;</a>
+    </div>
+    <p class="since">GSO, NC since 2015</p>
+  </footer>
+
+</div>
+
+<script>
+/* Nav — close on outside click or Escape. */
+(function () {
+  var nav = document.querySelector('details.nav');
+  if (!nav) return;
+  document.addEventListener('click', function (e) {
+    if (nav.open && !nav.contains(e.target)) nav.removeAttribute('open');
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.open) nav.removeAttribute('open');
+  });
+})();
+</script>
+
+<script data-goatcounter="https://adecentconversation.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
