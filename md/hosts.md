@@ -63,7 +63,7 @@ attempt to fill it.
 
 **Look down the table.** A soft-spoken observation from the far end
 changes the morning more often than not — but only if it gets aired.
-"I'd like to hear from some folks who haven't spoken yet" is allowed.
+"I'd like to hear from some folks who haven't spoken yet" opens the door.
 Calling on someone by name is not the same thing; don't put anyone
 on the spot unless you know them well enough to be sure it lands as
 an invitation. You're giving them room to participate, not forcing
@@ -85,9 +85,12 @@ what they wanted to talk about. As Hosts we get to model that.
 A short, honest question based on what someone just said beats a smart comment every time.
 
 **Don't fix anybody.** When someone shares something hard, the
-table's job is to hear it, not to resolve it. If the advice starts
-flowing, a question aimed back at the person — "what do you think
-you'll do?" — can return the conversation to its owner.
+table's job is to hear it, not to resolve it. If you're not sure what
+they're looking for, ask out loud: "are you looking for advice?" The
+answer either opens the floor or tells everyone to just listen. If
+advice starts flowing unasked, a question aimed back at the person —
+"what do you think you'll do?" — can return the conversation to its
+owner.
 
 ## Closing
 
