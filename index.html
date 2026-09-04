@@ -23,7 +23,7 @@
   [x] Web3Forms access key — form moved to /contact, key set there
   [x] /principles page exists (linked from principles section + footer)
   [x] /history page exists (linked from footer)
-  [~] Illustrations: L1, L5 PNGs in; L2 reverted to placeholder 8/27 (art didn't land — img/L2.png kept for now); L3 pending (see img/shot-list.md)
+  [~] Illustrations: L1, L5 PNGs in; L2/L3 placeholders removed 9/4 so only finished art shows — positions + restore markup in issue #17 (briefs in img/shot-list.md; img/L2.png kept but reverted, don't reuse without checking)
   [ ] F1 favicon pending; F2 social preview generated from L1
 
   CONSENT (all now relevant to /history, not this page)
@@ -258,34 +258,6 @@
     figure.plate img.ink { filter: invert(1); }
   }
 
-  /* Placeholder box — delete each as the real SVG lands */
-  .ph {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 1.5rem;
-    text-align: center;
-    border: 1px dashed var(--rule);
-    color: var(--graphite);
-    font-family: var(--util);
-    font-size: 0.75rem;
-    line-height: 1.5;
-  }
-
-  .ph b {
-    font-weight: 500;
-    font-size: 0.85rem;
-    color: var(--ink);
-    letter-spacing: 0.04em;
-  }
-
-  .ph span { max-width: 34ch; }
-
-  .ph-l2 { aspect-ratio: 1 / 1; }
-  .ph-l3 { aspect-ratio: 5 / 1; }
-
   /* ---- Two-up: copy beside a small plate ---- */
   .duo {
     display: grid;
@@ -447,7 +419,7 @@
 
   <hr class="table-rule">
 
-  <section class="duo">
+  <section>
     <div class="col">
       <p class="eyebrow">What it is</p>
       <p>
@@ -467,14 +439,6 @@
         there to agree with everyone else at the table.
       </p>
     </div>
-
-    <figure class="plate">
-      <!-- L2 — replace with: <img src="/img/L2.svg" alt="A person seen from behind, forearms on a table, leaning in to listen."> -->
-      <div class="ph ph-l2" role="img" aria-label="Illustration: a person seen from behind, forearms on a table, leaning in to listen.">
-        <b>L2 — THE LISTENER</b>
-        <span>Single figure from behind, leaning slightly in. 1:1</span>
-      </div>
-    </figure>
   </section>
 
   <hr class="table-rule">
@@ -519,14 +483,6 @@
         <dd>Nothing. Nothing to sign, nothing to bring.</dd>
       </div>
     </dl>
-
-    <figure class="plate">
-      <!-- L3 — replace with: <img src="/img/L3.svg" alt="Forearms and hands resting on a table, one mid-gesture."> -->
-      <div class="ph ph-l3" role="img" aria-label="Illustration: forearms and hands resting on a table, one mid-gesture.">
-        <b>L3 — HANDS</b>
-        <span>Forearms on the table line, no heads. 5:1</span>
-      </div>
-    </figure>
   </section>
 
   <hr class="table-rule">
